@@ -67,10 +67,65 @@ body {
     border-radius: 10px;
     padding: 20px 40px;
     margin-top: -36px;
+    margin-bottom: 10px;
     box-shadow: 2px 9px 12px -4px rgba(0,0,0,0.6);
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 90% 10%;
+}
+
+.clear_button {
+    margin-left: 30px;
+    font-size: 14px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color:hsl(180, 29%, 50%)
+}
+.clear_button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.search_tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search_tag {
+    margin-right: 10px;
+    background-color: hsl(180, 31%, 95%);
+    color: hsl(180, 29%, 50%);
+    font-weight: bold;
+    padding: 10px 35px 10px 10px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.search_tag::after {
+    content: "";
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(180, 31%, 95%);
+    width: 30px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: url(./images/icon-remove.svg);
+    background-position: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.search_tag:hover::after {
+    cursor: pointer;
+    background-color: hsl(180, 14%, 20%)
 }
 
 .jobs {
@@ -89,6 +144,7 @@ body {
     grid-template-columns: 50% 50%;
     box-shadow: 2px 7px 12px -4px rgba(0,0,0,0.3);
     padding: 30px 40px;
+    margin-bottom: 10px;
 }
 
 .filters {
@@ -106,7 +162,9 @@ body {
     padding: 10px;
     border-radius: 7px;
     margin-left: 20px; 
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .filter:hover {
@@ -125,12 +183,14 @@ body {
     display: grid;
     grid-template-rows: 33% 33% 33%;
     row-gap: 10px;
+
+    margin-top: -80px;
 }
 
 .job_ad_details {
     display: grid;
     width: 70%;
-    grid-template-columns: 25% 6% 28% 5% 36%;
+    grid-template-columns: 33% 33% 33%;
     column-gap: 5px;
     color: hsl(180, 8%, 52%);
 }
@@ -154,4 +214,9 @@ body {
 
 .tags {
     color: white;
+}
+
+.attribution {
+    position: relative;
+    margin-top: 300px;
 }
