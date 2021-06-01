@@ -34,6 +34,7 @@ The designs were created to the following widths:
 
 
  
+ 
 
 body {
     margin: 0;
@@ -218,7 +219,18 @@ body {
     position: relative;
     margin-top: 300px;
 }
+<<<<<<< HEAD
 
 .no_opacity {
     opacity: 0;
 }
+=======
+.tags {
+    color: white;
+}
+
+.attribution {
+    position: relative;
+    margin-top: 300px;
+}
+>>>>>>> 73a8ef4215948076ee2a96d5ab5181c8bd6b0bd7
