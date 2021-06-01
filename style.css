@@ -84,7 +84,6 @@ body {
 }
 .clear_button:hover{
     text-decoration: underline;
-    cursor: pointer;
 }
 
 .search_tags {
@@ -117,7 +116,6 @@ body {
     right: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-image: url(./images/icon-remove.svg);
     background-position: center;
     background-size: 15px;
     background-repeat: no-repeat;
@@ -219,4 +217,8 @@ body {
 .attribution {
     position: relative;
     margin-top: 300px;
+}
+
+.no_opacity {
+    opacity: 0;
 }
